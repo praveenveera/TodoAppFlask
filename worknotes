@@ -1,0 +1,32 @@
+Working notes: 
+
+define Flask()
+The flask object implements a WSGI application and acts as the central object. It is passed the name of the module or package of the application. Once it is created it will act as a central registry for the view functions, the URL rules, template configuration and much more.
+
+The name of the package is used to resolve resources from inside the package or the folder the module is contained in depending on if the package parameter resolves to an actual python package (a folder with an :file:__init__.py file inside) or a standard module (just a .py file).
+
+****For more information about resource loading, see :func:open_resource.?****
+
+Usually you create a :class:Flask instance in your main module or in the :file:__init__.py file of your package like this:
+
+    from flask import Flask  
+
+assign app.route 
+app run
+
+define 
+
+template details : https://codeburst.io/jinja-2-explained-in-5-minutes-88548486834e
+
+SQL :
+
+SQLAlchemy is a popular SQL toolkit and Object Relational Mapper. 
+It is written in Python and gives full power and flexibility of SQL to an application developer. 
+SQLAlchemy is famous for its object-relational mapper (ORM), using which classes can be mapped to the database, thereby allowing the object model and database schema to develop in a cleanly decoupled way from the beginning.
+
+
+
+for creating the database:
+    from app import db
+    db.create_all() # for creating the database 
+    exit()
